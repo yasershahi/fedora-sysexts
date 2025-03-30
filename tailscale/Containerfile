@@ -3,7 +3,7 @@ FROM baseimage
 RUN <<EORUN
 set -xeuo pipefail
 dnf install -y \
-    btop \
-    rocm-smi
+    nss-tools \
+    tailscale
 dnf clean all
 EORUN
